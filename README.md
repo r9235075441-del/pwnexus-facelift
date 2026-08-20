@@ -1,6 +1,6 @@
 # Nexus Proxy Hub
 
-meri website https://pwnexus.pages.dev ka proxy banao aur website ki branding jo PW-MARCO hai usko replace karke PW-NEXUS kar do aur Https://i.ibb.co/YBbwNGxz/Logo-pw-removebg-preview.png Ye replace karo https://i.ibb.co/3ykY8VZY/photo-6066420858273600154-x.jpg isse aur ye link https://t.me/official_marco_22 replace karo https://t.me/PWNexuss kar do
+meri website https://pwnexus.pages.dev ka proxy banao aur website ki branding jo PW-MARCO hai usko replace karke EduFreek kar do aur Https://i.ibb.co/YBbwNGxz/Logo-pw-removebg-preview.png Ye replace karo https://i.ibb.co/ksRGCJdv/IMG-20260820-152721-928.jpg isse aur ye link https://t.me/official_marco_22 replace karo https://t.me/EduFreek kar do
 
 This project was built with [Lovable](https://lovable.dev).
 
