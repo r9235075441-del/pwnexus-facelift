@@ -16,7 +16,7 @@ const REPLACEMENTS: Array<[string, string]> = [
   ["pwnexus", "EduFreek"],
   [
     "https://i.ibb.co/YBbwNGxz/Logo-pw-removebg-preview.png",
-    "https://i.ibb.co/ksRGCJdv/IMG-20260820-152721-928.jpg",
+    "https://i.ibb.co/F4Z2KkfQ/jw-Q2x-H5-W62-BQM3-Z4e-HIit9-Xf-Bs-At2sx6-H8-Ahf-S-rpz-Yvk-ARky-Sjodovu9bcn-NSEF-Dimb-Da-Lukr-XIp8o9-XQYlod.jpg",
   ],
   ["https://t.me/official_marco_22", "https://t.me/EduFreek"],
   ["official_marco_22", "EduFreek"],
