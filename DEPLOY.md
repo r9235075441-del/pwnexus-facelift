@@ -1,4 +1,4 @@
-# Deploy the PW-NEXUS proxy anywhere
+# Deploy the EduFreek proxy anywhere
 
 Yeh repo teen jagah deploy ho sakti hai. Proxy logic `_shared/proxy.ts` mein hai — teeno adapters wahi call karte hain.
 

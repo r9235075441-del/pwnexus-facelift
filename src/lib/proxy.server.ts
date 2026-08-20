@@ -2,15 +2,15 @@ const ORIGIN = "https://pwnexus.pages.dev";
 const ORIGIN_HOST = "pwnexus.pages.dev";
 
 const REPLACEMENTS: Array<[string, string]> = [
-  ["PW-MARCO", "PW-NEXUS"],
+  ["PW-MARCO", "EduFreek"],
+  ["PW-NEXUS", "EduFreek"],
   [
     "https://i.ibb.co/YBbwNGxz/Logo-pw-removebg-preview.png",
-    "https://i.ibb.co/3ykY8VZY/photo-6066420858273600154-x.jpg",
+    "https://i.ibb.co/ksRGCJdv/IMG-20260820-152721-928.jpg",
   ],
-  ["https://t.me/official_marco_22", "https://t.me/PWNexuss"],
-  // Bare telegram handles used by the site config/API
-  ["official_marco_22", "PWNexuss"],
-  ["officialmarco22", "PWNexuss"],
+  ["https://t.me/official_marco_22", "https://t.me/EduFreek"],
+  ["official_marco_22", "EduFreek"],
+  ["officialmarco22", "EduFreek"],
 ];
 
 const HOP_BY_HOP = new Set([
