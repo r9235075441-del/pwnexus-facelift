@@ -55,13 +55,11 @@ function isTextual(contentType: string | null) {
 }
 
 function rewriteText(input: string) {
-  let out = input;
-  for (const [from, to] of REPLACEMENTS) {
-    out = out.split(from).join(to);
-  }
-  // Absolute origin URLs -> relative so they stay on the proxy
-  out = out.split(`${ORIGIN}/`).join("/");
+  // Strip absolute origin URLs first so brand rewrites can't corrupt them
+  let out = input.split(`${ORIGIN}/`).join("/");
   out = out.split(ORIGIN).join("");
+  out = out.split(ORIGIN_HOST).join("");
+  for (const [from, to] of REPLACEMENTS) out = out.split(from).join(to);
   return out;
 }
 
