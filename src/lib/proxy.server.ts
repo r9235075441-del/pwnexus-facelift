@@ -3,7 +3,17 @@ const ORIGIN_HOST = "pwnexus.pages.dev";
 
 const REPLACEMENTS: Array<[string, string]> = [
   ["PW-MARCO", "EduFreek"],
+  ["PW MARCO", "EduFreek"],
+  ["PWMARCO", "EduFreek"],
   ["PW-NEXUS", "EduFreek"],
+  ["PW NEXUS", "EduFreek"],
+  ["PW Nexus", "EduFreek"],
+  ["pw nexus", "EduFreek"],
+  ["pw-nexus", "EduFreek"],
+  ["PWNexuss", "EduFreek"],
+  ["PWNexus", "EduFreek"],
+  ["PWNEXUS", "EduFreek"],
+  ["pwnexus", "EduFreek"],
   [
     "https://i.ibb.co/YBbwNGxz/Logo-pw-removebg-preview.png",
     "https://i.ibb.co/ksRGCJdv/IMG-20260820-152721-928.jpg",
@@ -45,13 +55,11 @@ function isTextual(contentType: string | null) {
 }
 
 function rewriteText(input: string) {
-  let out = input;
-  for (const [from, to] of REPLACEMENTS) {
-    out = out.split(from).join(to);
-  }
-  // Absolute origin URLs -> relative so they stay on the proxy
-  out = out.split(`${ORIGIN}/`).join("/");
+  // Strip absolute origin URLs first so brand rewrites can't corrupt them
+  let out = input.split(`${ORIGIN}/`).join("/");
   out = out.split(ORIGIN).join("");
+  out = out.split(ORIGIN_HOST).join("");
+  for (const [from, to] of REPLACEMENTS) out = out.split(from).join(to);
   return out;
 }
 
